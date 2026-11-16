@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>make.fun — live bounty board</title>
+<meta name="description" content="A fast, read-only frontend for make.fun: the live bounty board, bounty pages, leaderboards and public profiles, from make.fun's public API.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#/">make<span>.fun</span></a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#/">Bounties</a>
+      <a href="#/bounty/makefun-frontend-01">This bounty</a>
+    </nav>
+    <span class="live-pill" id="live-pill" title="Live data from make.fun's public API"><i class="dot" aria-hidden="true"></i><span>live</span><span class="updated" id="updated"></span></span>
+  </div>
+</header>
+<main id="app" class="wrap" aria-live="polite"></main>
+<footer class="wrap foot">
+  <p>Read-only. Data comes from make.fun's public API (<code>https://make.fun/api</code>) — no sign-in, no writes, nothing leaves your browser. Built as plain static files.</p>
+</footer>
+</body>
+</html>
